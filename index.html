@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/calc.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <ul class="container">
+                <li class="item-menu">
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#calculadora">Calculadora JS</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="sobre container" id="sobre">
+        <h1 class="titulo">Calculadora JS</h1>
+        <p>
+            A Calculadora JS foi desenvolvida para exercitar a prática de HTML, CSS e JavaScript. O 
+            Projeto foi desenvolvido sem a utilização de frameworks e também possui alguns elementos
+            do estudo sobre desing responsivo iniciado com a #ImersãoCSS da Alura -  Imersão Hipsters.CSS.
+        </p>
+    </div>
+
+    <div class="calculadora container" id="calculadora">
+        <form name="calcform" action="" method="post">
+            <fieldset>
+                <table >
+                    <div class="topo-calculadora">
+                        <input type="text" class="visor" name="visor" id="visor" value="">
+                    </div>
+                    
+                    <div class="corpo-calculadora">
+                        <tbody>
+                            <tr>
+                                <td> <input type="button" class="num" value="9" onclick="insereNumeros(9)"></td>
+                                <td> <input type="button" class="num"  value="8"onclick="insereNumeros(8)"></td>
+                                <td> <input type="button" class="num"  value="7"onclick="insereNumeros(7)"></td>
+                                <td> <input type="button" class="oper" name="somar" value="+"onclick="calcUser('somar')" ></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="button" class="num"  value="6" onclick="insereNumeros(6)"></td>
+                                <td> <input type="button" class="num"  value="5" onclick="insereNumeros(5)"></td>
+                                <td> <input type="button" class="num" value="4" onclick="insereNumeros(4)"></td>
+                                <td> <input type="button" class="oper" name="subtrair" value="-" onclick="calcUser('subtrair')"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="button" class="num"  value="3"onclick="insereNumeros(3)"></td>
+                                <td> <input type="button" class="num"  value="2"onclick="insereNumeros(2)"></td>
+                                <td> <input type="button" class="num"  value="1" onclick="insereNumeros(1)"></td>
+                                <td> <input type="button" class="oper" name="multiplicar" value="*" onclick="calcUser('multiplicar')"></td>
+                            </tr>
+                            <tr>
+                                <td> <input type="button" class="num" value="0" onclick="insereNumeros(0)"></td>
+                                <td> <input type="button" class="oper" name="dividir" value="/" onclick="calcUser('dividir')"></td>
+                                <td> <input type="button" class="igual" name="igual" value="=" onclick="calcUser('resultado')"></td>
+                                <td> <input type="button" class="limpa"  value="c" onclick="limpaTela()"></td>
+                            </tr>
+                        </tbody>
+                    </div>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer class="rodape container" id="contato">
+        <div class="icons">
+            <a href="https://github.com/magnamoz"> 
+                <img src="img/2111432.svg" alt="Imagem github">
+            </a>  
+            <a href="https://www.linkedin.com/in/magna-moz/"> 
+                <img src="img/1384014.svg" alt="Imagem linkedin">
+            </a>    
+            <a href="mailto:magnamoz@gmail.com"> 
+                <img src="img/1782765.svg" alt="Imagem linkedin">
+            </a>    
+        </div>
+        <div class="fonte">
+            <p>
+               Icons: Github  feito por Pixel perfect, LinkedIn  feito por Freepik e E-mail feito por Iconixar
+                disponíveis em www.flaticon.com
+            </p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/calc.js"></script>
+</body>
+</html>

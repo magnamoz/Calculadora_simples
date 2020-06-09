@@ -1,0 +1,182 @@
+/*Estilização para todo o body*/
+.body{
+    font-family: 'M PLUS 1p', sans-serif;
+    height: 100vh;
+    font-size: 12px;
+}
+
+/*Estilo tela 400px*/
+@media (min-width: 400px) {
+    body {
+      font-size: 14px;
+    }
+}
+/*Estilo tela 600px*/
+@media (min-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+}
+/*Estilo tela 1200px*/
+@media (min-width: 1200px) {
+    body {
+      font-size: 20px;
+    }
+}
+.sobre,
+.calculadora,
+.rodape {
+    padding: 1em;
+}
+
+/*Menu */
+.header {
+    height: 10vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .menu {
+    width: 100vw;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.menu .item-menu {
+    display: inline-block;
+    text-align: center;
+}
+
+.item-menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    padding: 10px 20px;
+    transition: color 1s;
+}
+
+.item-menu a:hover{
+    color: rgb(161, 89, 161);
+}
+
+
+/*Sobre*/
+.sobre .titulo{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 2px 8px mediumpurple;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+.sobre p {
+    text-align: justify;
+    text-indent: 1.4em;
+    line-height: normal;
+    font-size: 1em;
+    color: rgb(66, 65, 65);
+    margin-bottom: 1em;
+}
+
+@media (min-width: 1200px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1200px;
+    }
+  }
+
+/*Calculadora*/
+form fieldset {
+    margin: 10px auto 20px auto;
+    width: 35%;
+    border: solid black 1px;
+    border-radius: 3%;
+    padding: 2%;
+ }
+
+form table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.topo-calculadora{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.visor {
+    background-color: rgb(231, 203, 200);
+    height: 40px;
+}
+
+form input {
+    width: 75%;
+    border: solid #ccc 1px;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+ 
+form input.num {
+    display: block;
+    width: 48px;
+    height: 48px;
+}
+ 
+form input.oper {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-color: #b2b2b2;
+}
+
+form input.igual {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-color: #b2b2b2;
+}
+
+form input.limpa {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-color: #b2b2b2;
+}
+
+/*Rodapé-contato*/
+.icons{
+    text-align: center;
+}
+.rodape img{
+    height: 2.5em; 
+}
+
+@media (min-width: 600px){
+    .rodape img {
+        height: 3.5em;;
+    }
+}
+
+.rodape a {
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.fonte {
+    margin-top: 1em;
+    margin-bottom:1em;
+}
+.fonte p{
+    text-align: center;
+    color:grey;
+    font-size: 0.8em;
+}
+
