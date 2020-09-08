@@ -6,3 +6,5 @@ Projeto simples de uma calculadora para estudar/praticar HTML e CSS e dar os pri
 <p align ="center">
 O Projeto foi desenvolvido sem a utilização de frameworks e também possui alguns elementos do estudo sobre desing responsivo iniciado com a #ImersãoCSS da Alura - Imersão Hipsters.CSS.
 </p>
+
+![Imagem layout](https://github.com/magnamoz/Calculadora_simples/blob/master/index.png)
